@@ -1,3 +1,19 @@
+<h1 align = 'center'> BookStore </h1>
+This is a simple bookstore management tool with React and Redux.
+
+## TOOLS
+- Node.js
+- React
+- React-DOM
+- React-Create-App
+- Redux
+- npm
+- CSS
+- ES6
+
+## THE PROJECT
+Magic-books Inc. is a fictional company based in Germany. They have requested your help to build the front-end of an application that will help them organize and manage their bookstore. They want it to be fast, dynamic and responsive to their actions and therefore you decided to build it with React & Redux.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,4 +82,24 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# BookStore
+
+
+### 👤 **AUTHOR**
+- Github-> [@ampaire](https://github.com/ampaire)
+- Twitter-> [@AmpaPhem](https://twitter.com/AmpaPhem)
+- LinkedIn-> [Ampaire Phemia](https://www.linkedin.com/in/ampaire-phemia-b41619181)
+
+### 🤝 CONTRIBUTING
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/ampaire/react-calculator/issues).
+
+## SHOW SUPPORT
+
+Give a ⭐️ if you like this project!
+
+## ACKNOWLEDGMENTS
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
