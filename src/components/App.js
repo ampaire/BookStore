@@ -1,8 +1,9 @@
 import React from 'react';
+import BooksList from '../containers/BooksList';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <BooksList />
       <BooksForm />
     </div>
