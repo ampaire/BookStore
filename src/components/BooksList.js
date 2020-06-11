@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import Book from '../components/Book';
+import Book from './Book';
 
 const BooksList = ({ books }) => {
   const { state } = books;
