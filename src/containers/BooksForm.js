@@ -33,12 +33,24 @@ class BooksForm extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
+  handleChange(el) {
+    if (el.target.name === 'title') {
+      this.setState({
+        title: el.target.value,
+      });
+    } else if (el.target.name === 'category') {
+      this.setState({
+        category: el.target.value,
+      });
+    }
+  }
+
   render() {
     const { title, category } = this.state;
     return (
       <form className="input-form">
         <INPUT type="text" value={title} />
-        <SELECT name="category" value={category}>
+        <SELECT name="category" value={category} onChange={this.handleChange}>
           {categories.map(category => (
             <option key={category}>{category}</option>
           ))}
