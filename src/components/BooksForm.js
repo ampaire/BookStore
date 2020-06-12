@@ -14,7 +14,7 @@ const BooksForm = () => {
   return (
     <div>
       <form>
-        <input type="text" value="Book Title" />
+        <input type="text" defaultValue="Book Title" />
         <select name="category">
           {categories.map(category => (
             <option key={category}>{category}</option>
