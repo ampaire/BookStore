@@ -1,8 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
-import { createBook } from '../actions/index';
 
 
 const INPUT = styled.input`
