@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Book from './Book';
+import Book from '../components/Book';
 
 const TABLE = styled.table`
 width: 600px
