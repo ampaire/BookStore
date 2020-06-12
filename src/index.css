@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.table-one{
+  width: 600px;
+  height: 300px;
+  padding: 20px;
+}
+
+.input-form {
+  color: white;
+  text-align: center;
+  width: 600px;
+  padding: 10px;
+}
+
+button {
+  background-color: brown;
+  color: white;
+  padding: 5px;
+}
