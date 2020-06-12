@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { createBook } from '../actions/index';
 
 
 const INPUT = styled.input`
@@ -13,27 +16,39 @@ background: brown;
 color:white;
 margin-right: 2%;
 `;
-const BooksForm = () => {
-  const categories = [
-    'Action',
-    'Biography',
-    'History',
-    'Horror',
-    'Kids',
-    'Learning',
-    'Sci-Fi',
-  ];
-  return (
-    <form className="input-form">
-      <INPUT type="text" defaultValue="Add Book Title" />
-      <SELECT name="category">
-        {categories.map(category => (
-          <option key={category}>{category}</option>
-        ))}
-      </SELECT>
-      <button type="submit"> Submit </button>
-    </form>
-  );
-};
+const categories = [
+  'Action',
+  'Biography',
+  'History',
+  'Horror',
+  'Kids',
+  'Learning',
+  'Sci-Fi',
+];
+
+class BooksForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: '',
+      category: categories[0],
+    };
+  }
+
+  render() {
+    const { title, category } = this.state;
+    return (
+      <form className="input-form">
+        <INPUT type="text" value={title} />
+        <SELECT name="category" value={category}>
+          {categories.map(category => (
+            <option key={category}>{category}</option>
+          ))}
+        </SELECT>
+        <button type="submit"> Submit </button>
+      </form>
+    );
+  }
+}
 
 export default BooksForm;
