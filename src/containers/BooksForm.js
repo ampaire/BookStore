@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { createBook } from '../actions/index';
 
 
 const INPUT = styled.input`
@@ -31,6 +32,7 @@ class BooksForm extends React.Component {
       category: categories[0],
     };
     this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(el) {
@@ -42,6 +44,16 @@ class BooksForm extends React.Component {
       this.setState({
         category: el.target.value,
       });
+    }
+  }
+
+  handleSubmit(el) {
+    const { title } = this.state;
+    const { createBook } = this.props;
+    el.preventDefault();
+    if (title) {
+      createBook(this.state);
+      this.reset();
     }
   }
 
