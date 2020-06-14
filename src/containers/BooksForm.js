@@ -26,6 +26,7 @@ const BUTTON = styled.button`
   padding: 10px;
   width: 100px;
   outline:none;
+  cursor: pointer;
 `;
 
 const categories = [

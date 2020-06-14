@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { removeBook } from '../actions/index';
 
 const TR = styled.tr`
 background: Brown;
@@ -14,9 +13,10 @@ const BUTTON = styled.button`
   border-radius: 12px;
   padding: 13px;
   outline:none;
+  cursor:pointer;
 `;
 
-export default function Books({ book }) {
+export default function Books({ book, removeBook }) {
   return (
     <TR key={book.id}>
       <td>{book.id}</td>
@@ -36,4 +36,5 @@ Books.propTypes = {
     title: PropTypes.string,
     category: PropTypes.string,
   }).isRequired,
+  removeBook: PropTypes.func.isRequired,
 };
