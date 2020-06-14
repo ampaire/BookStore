@@ -30,6 +30,7 @@ class BooksForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      id: Math.floor(Math.random() * 1000),
       title: '',
       category: categories[0],
     };
@@ -37,14 +38,14 @@ class BooksForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange(el) {
-    if (el.target.name === 'title') {
+  handleChange(e) {
+    if (e.target.name === 'title') {
       this.setState({
-        title: el.target.value,
+        title: e.target.value,
       });
-    } else if (el.target.name === 'category') {
+    } else if (e.target.name === 'category') {
       this.setState({
-        category: el.target.value,
+        category: e.target.value,
       });
     }
   }
@@ -59,17 +60,25 @@ class BooksForm extends React.Component {
     }
   }
 
+  reset() {
+    this.setState({
+      id: Math.ceil(Math.random() * 1000),
+      title: '',
+      category: categories[0],
+    });
+  }
+
   render() {
     const { title, category } = this.state;
     return (
-      <form className="input-form">
-        <INPUT type="text" value={title} onChange={this.handleChange} />
+      <form onSubmit={this.handleSubmit} className="input-form">
+        <INPUT name="title" type="text" value={title} onChange={this.handleChange} />
         <SELECT name="category" value={category} onChange={this.handleChange}>
           {categories.map(category => (
             <option key={category}>{category}</option>
           ))}
         </SELECT>
-        <button type="submit" onClick={this.handleSubmit}> Submit </button>
+        <button type="submit"> Submit </button>
       </form>
     );
   }
