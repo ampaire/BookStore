@@ -11,11 +11,23 @@ margin-right: 3%;
 `;
 
 const SELECT = styled.select`
-padding: 5px;
+padding: 10px;
 background: brown;
 color:white;
+border: 1px solid gray;
+border-radius: 12px;
 margin-right: 2%;
+outline: none;
 `;
+
+const BUTTON = styled.button`
+  border: 1px solid gray;
+  border-radius: 12px;
+  padding: 10px;
+  width: 100px;
+  outline:none;
+`;
+
 const categories = [
   'Action',
   'Biography',
@@ -78,7 +90,7 @@ class BooksForm extends React.Component {
             <option key={category}>{category}</option>
           ))}
         </SELECT>
-        <button type="submit"> Submit </button>
+        <BUTTON type="submit"> Submit </BUTTON>
       </form>
     );
   }
