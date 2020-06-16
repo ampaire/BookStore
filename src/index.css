@@ -48,7 +48,7 @@ button {
 select {
   padding: 10px;
   background: brown;
-  color:white;
+  color: white;
   border: 1px solid gray;
   border-radius: 12px;
   margin-right: 2%;
@@ -60,7 +60,7 @@ select {
   border-radius: 12px;
   padding: 10px;
   width: 100px;
-  outline:none;
+  outline: none;
   cursor: pointer;
 }
 
@@ -69,7 +69,7 @@ select {
   border-radius: 12px;
   padding: 10px;
   width: 120px;
-  outline:none;
+  outline: none;
   cursor: pointer;
 }
 
@@ -83,7 +83,7 @@ input {
 }
 
 .erow {
-  background: Brown;
+  background: brown;
   color: white;
   text-align: center;
   width: 100%;
