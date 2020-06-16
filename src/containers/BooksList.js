@@ -1,34 +1,34 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import Book from '../components/Book';
+import { removeBook } from '../actions/index';
 
-const TABLE = styled.table`
-width: 600px
-height: 400px
-`;
-
-const BooksList = props => {
-  const { state } = props;
-  return (
-    <TABLE className="table-one">
-      <thead>
-        <tr>
-          <th>Book ID</th>
-          <th>Title</th>
-          <th>Category</th>
-        </tr>
-      </thead>
-      <tbody>
-        {state.map(book => <Book key={book.id} book={book} />)}
-      </tbody>
-    </TABLE>
-  );
-};
+const BooksList = ({ state, removeBook }) => (
+  <table className="table-one">
+    <thead>
+      <tr>
+        <th className="trow">Book ID</th>
+        <th className="trow">Title</th>
+        <th className="trow">Category</th>
+      </tr>
+    </thead>
+    <tbody>
+      {state.map(book => <Book key={Math.random() * 1000} book={book} removeBook={removeBook} />)}
+    </tbody>
+  </table>
+);
 BooksList.propTypes = {
   state: PropTypes.instanceOf(Array).isRequired,
+  removeBook: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({ state });
-export default connect(mapStateToProps)(BooksList);
+
+const mapDispatchToProps = dispatch => ({
+  removeBook: book => {
+    dispatch(removeBook(book));
+  },
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(BooksList);
