@@ -1,33 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-
-const TR = styled.tr`
-background: Brown;
-color: white;
-text-align: center;
-width: 100%;
-`;
-const BUTTON = styled.button`
-  border: 1px solid gray;
-  border-radius: 12px;
-  padding: 13px;
-  outline:none;
-  cursor:pointer;
-`;
 
 export default function Books({ book, removeBook }) {
   return (
-    <TR key={book.id}>
-      <td>{book.id}</td>
-      <td>{book.title}</td>
-      <td>{book.category}</td>
-      <td>
-        <BUTTON type="submit" onClick={() => removeBook(book)}>
+    <tr claasName="erow" key={book.id}>
+      <td className="trow">{book.id}</td>
+      <td className="trow">{book.title}</td>
+      <td className="trow">{book.category}</td>
+      <td className="trow">
+        <button className="btn3" type="submit" onClick={() => removeBook(book)}>
           Remove Book
-        </BUTTON>
+        </button>
       </td>
-    </TR>
+    </tr>
   );
 }
 Books.propTypes = {

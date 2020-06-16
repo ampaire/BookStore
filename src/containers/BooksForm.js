@@ -1,32 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { createBook } from '../actions/index';
-
-const INPUT = styled.input`
-padding: 7px;
-margin-right: 3%;
-`;
-
-const SELECT = styled.select`
-padding: 10px;
-background: brown;
-color:white;
-border: 1px solid gray;
-border-radius: 12px;
-margin-right: 2%;
-outline: none;
-`;
-
-const BUTTON = styled.button`
-  border: 1px solid gray;
-  border-radius: 12px;
-  padding: 10px;
-  width: 100px;
-  outline:none;
-  cursor: pointer;
-`;
 
 const categories = [
   'Action',
@@ -84,13 +59,13 @@ class BooksForm extends React.Component {
     const { title, category } = this.state;
     return (
       <form onSubmit={this.handleSubmit} className="input-form">
-        <INPUT name="title" type="text" value={title} onChange={this.handleChange} />
-        <SELECT name="category" value={category} onChange={this.handleChange}>
+        <input name="title" type="text" value={title} onChange={this.handleChange} />
+        <select name="category" value={category} onChange={this.handleChange}>
           {categories.map(category => (
             <option key={category}>{category}</option>
           ))}
-        </SELECT>
-        <BUTTON type="submit"> Submit </BUTTON>
+        </select>
+        <button className="btn2" type="submit"> Submit </button>
       </form>
     );
   }
