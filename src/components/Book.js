@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export default function Books({ book, removeBook }) {
   return (
-    <tr claasName="erow" key={book.id}>
+    <tr className="erow" key={book.id}>
       <td className="trow">{book.id}</td>
       <td className="trow">{book.title}</td>
       <td className="trow">{book.category}</td>
