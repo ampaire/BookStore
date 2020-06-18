@@ -30,5 +30,4 @@ CategoryFilter.propTypes = {
   changeFilter: PropTypes.func.isRequired,
 };
 
-
 export default CategoryFilter;
