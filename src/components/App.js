@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <div className="container">
         <header className="header">
-          <img className="react-logo" src={logo} alt="logo" />
+          <img className="book-logo" src={logo} alt="logo" />
           <h4>BOOKS</h4>
           <h4>CATEGORIES</h4>
         </header>
