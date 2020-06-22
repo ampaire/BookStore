@@ -40,14 +40,14 @@ code {
 }
 
 button {
-  background-color: brown;
+  background-color: rgb(101, 67, 33);
   color: white;
   padding: 5px;
 }
 
 select {
   padding: 10px;
-  background: brown;
+  background: rgb(101, 67, 33);
   color: white;
   border: 1px solid gray;
   border-radius: 12px;
@@ -83,7 +83,7 @@ input {
 }
 
 .erow {
-  background: brown;
+  background: rgb(101, 67, 33);
   color: white;
   text-align: center;
   width: 100%;
