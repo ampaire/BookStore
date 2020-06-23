@@ -17,7 +17,7 @@ const CategoryFilter = ({
   const selectCat = React.useRef(null);
   return (
     <div>
-      <select ref={selectCat} name="category" onChange={() => changeFilter(selectCat.current.value)}>
+      <select ref={selectCat} name="category" className="cat-select" onChange={() => changeFilter(selectCat.current.value)}>
         {categories.map(category => (
           <option key={category}>{category}</option>
         ))}

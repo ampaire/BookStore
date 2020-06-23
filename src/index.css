@@ -47,12 +47,24 @@ code {
 }
 
 button {
-  background-color: rgb(101, 67, 33);
+  border: none;
   color: white;
-  padding: 5px;
+  font-weight: bolder;
 }
 
-select {
+.cat-select {
+  padding: 10px;
+  background: rgb(101, 67, 33);
+  color: white;
+  text-align-last:center;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 12px;
+  margin-right: 2%;
+  outline: none;
+}
+
+.btn2 {
   padding: 10px;
   background: rgb(101, 67, 33);
   color: white;
@@ -62,15 +74,6 @@ select {
   border-radius: 12px;
   margin-right: 2%;
   outline: none;
-}
-
-.btn2 {
-  border: 1px solid gray;
-  border-radius: 12px;
-  padding: 10px;
-  width: 25%;
-  outline: none;
-  cursor: pointer;
 }
 
 .btn3 {
@@ -109,4 +112,34 @@ input {
 .book-logo {
   width: 200px;
   height: 100px;
+}
+
+.books {
+  align-items: center;
+  border: 1px solid #DFDFDF; 
+  background-color: #FFF;  
+  border-radius: 0.3em;
+  display: flex;
+  margin-bottom: 1em;
+  padding: 24px; 
+}
+
+.right-side {
+  flex-basis: 30%;
+  justify-self: center;
+  padding-left: 2.5%;
+  text-align: center;
+}
+
+.middle {
+  align-items: center;
+  border-right: 1px solid #DDD;
+  display: inline-flex;
+  flex-basis: 20%;  
+  justify-content: center;  
+  padding-right: 20px;  
+}
+
+.left-side {
+  flex-basis: 50%;
 }
