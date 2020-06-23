@@ -33,10 +33,17 @@ code {
 }
 
 .input-form {
-  color: white;
-  text-align: center;
-  width: 600px;
-  padding: 10px;
+  width: 90%;
+  margin: 20px auto;
+  color: rgb(173, 171, 171);
+  display: flex;
+  justify-content: space-between;
+  height: 40%;
+}
+
+.book-input {
+  width: 50%;
+  height: 30px;
 }
 
 button {
@@ -49,6 +56,8 @@ select {
   padding: 10px;
   background: rgb(101, 67, 33);
   color: white;
+  text-align-last:center;
+  width: 25%;
   border: 1px solid gray;
   border-radius: 12px;
   margin-right: 2%;
@@ -59,7 +68,7 @@ select {
   border: 1px solid gray;
   border-radius: 12px;
   padding: 10px;
-  width: 100px;
+  width: 25%;
   outline: none;
   cursor: pointer;
 }
@@ -94,5 +103,10 @@ input {
   width: 100%;
   align-items: center;
   justify-content: space-evenly;
-  color: rgb(173, 171, 171);
+  color: rgb(101, 67, 33);
+}
+
+.book-logo {
+  width: 200px;
+  height: 100px;
 }
