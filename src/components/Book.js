@@ -15,12 +15,12 @@ export default function Books({ book, removeBook }) {
       <div id="middle">
         <div className="progress" />
         <div className="percent">
-          <h1 className="percentage">64%</h1>
+          <h1 className="percentage">48%</h1>
           <h4 className="completed">Complete</h4>
         </div>
       </div>
       <div className="right-side">
-        <button type="button" onClick={() => removeBook(book)}>
+        <button type="button" className="btn" onClick={() => removeBook(book)}>
           Remove Book
         </button>
       </div>

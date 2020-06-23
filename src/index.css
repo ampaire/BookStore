@@ -76,15 +76,6 @@ button {
   outline: none;
 }
 
-.btn3 {
-  border: 1px solid gray;
-  border-radius: 12px;
-  padding: 10px;
-  width: 120px;
-  outline: none;
-  cursor: pointer;
-}
-
 input {
   padding: 7px;
   margin-right: 3%;
@@ -143,3 +134,57 @@ input {
 .left-side {
   flex-basis: 50%;
 }
+
+.progress {
+  width: 60px;
+  height: 60px;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-right: 10px solid rgb(101, 67, 33);
+  border-bottom: 10px solid rgb(101, 67, 33);
+}
+
+.btn {
+  padding: 10px;
+  background: rgb(101, 67, 33);
+  color: white;
+  text-align-last:center;
+  width: 50%;
+  border: 1px solid gray;
+  border-radius: 12px;
+  outline: none;
+}
+
+.actions { text-align: left; }
+.actions button {  
+  background-color: transparent;
+  border: none;
+  color: rgb(204, 136, 68);
+}
+.actions button:nth-child(1) {
+  padding-left: 0;
+}
+.actions button:nth-child(2) {
+  border-left: 1px solid #DDD;
+  border-right: 1px solid #DDD;
+  margin: 0 8px;
+  padding: 0 8px
+}
+
+percent { padding-left: 12px; }
+.percentage {
+  font-weight: 300;
+}
+.completed {
+  color: gray;
+  font-weight: 300;
+}
+
+.current { 
+  color: gray;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+
+
