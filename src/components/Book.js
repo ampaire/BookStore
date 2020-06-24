@@ -25,7 +25,6 @@ export default function Books({ book, removeBook }) {
         </button>
       </div>
     </div>
-
   );
 }
 Books.propTypes = {

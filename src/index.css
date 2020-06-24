@@ -14,6 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(228, 221, 221);
 }
 
 code {
@@ -25,11 +26,10 @@ code {
     'Courier New',
     monospace;
 }
-
-.table-one {
-  width: 600px;
-  height: auto;
-  padding: 20px;
+.book-bg {
+  background-color: rgb(228, 221, 221);
+  padding: 4%;
+  height: 100%;
 }
 
 .input-form {
@@ -59,7 +59,7 @@ button {
   text-align-last:center;
   width: 100%;
   border: 1px solid gray;
-  border-radius: 12px;
+  border-radius: 0.3em;
   margin-right: 2%;
   outline: none;
 }
@@ -71,31 +71,20 @@ button {
   text-align-last:center;
   width: 25%;
   border: 1px solid gray;
-  border-radius: 12px;
-  margin-right: 2%;
+  border-radius: 0.3em;
+  margin-left: 2%;
   outline: none;
-}
-
-input {
-  padding: 7px;
-  margin-right: 3%;
-}
-
-.trow {
-  padding: 5px;
-}
-
-.erow {
-  background: rgb(101, 67, 33);
-  color: white;
-  text-align: center;
-  width: 100%;
 }
 
 .header {
   display: flex;
-  width: 100%;
+  background-color: cornsilk;
+  width: 104%;
+  margin-top: -1.2em;
+  margin-left: -2%;
+  margin-bottom: 15px;
   align-items: center;
+  border-radius:0.3em;
   justify-content: space-evenly;
   color: rgb(101, 67, 33);
 }
@@ -108,11 +97,12 @@ input {
 .books {
   align-items: center;
   border: 1px solid #DFDFDF; 
-  background-color: #FFF;  
+  background-color: cornsilk; 
   border-radius: 0.3em;
   display: flex;
+  height: auto;
   margin-bottom: 1em;
-  padding: 24px; 
+  padding: 14px; 
 }
 
 .right-side {
@@ -136,12 +126,17 @@ input {
 }
 
 .progress {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border: 10px solid #f3f3f3;
   border-radius: 50%;
   border-right: 10px solid rgb(101, 67, 33);
   border-bottom: 10px solid rgb(101, 67, 33);
+}
+
+.container {
+  background-color: darkgrey;
+  padding: 1.2em;
 }
 
 .btn {
@@ -151,7 +146,7 @@ input {
   text-align-last:center;
   width: 50%;
   border: 1px solid gray;
-  border-radius: 12px;
+  border-radius: 0.3em;
   outline: none;
 }
 
@@ -159,7 +154,8 @@ input {
 .actions button {  
   background-color: transparent;
   border: none;
-  color: rgb(204, 136, 68);
+  font-weight: 100;
+  color: rgb(128, 126, 126);
 }
 .actions button:nth-child(1) {
   padding-left: 0;
@@ -180,11 +176,28 @@ percent { padding-left: 12px; }
   font-weight: 300;
 }
 
+.category {
+  color: grey;
+  font-family: Arial;
+  font-weight: 800;
+  margin-bottom: -2px;
+}
+
 .current { 
   color: gray;
   font-weight: 400;
   font-size: 12px;
 }
 
-
+@media screen and (max-width: 720px) {
+  .actions button:nth-child(2) { padding: 6px; margin: 0; }
+  .books { flex-wrap: wrap; }
+  .book-logo { width: 100px; height: 90px;}
+  .left-side { flex-basis: 100%; text-align: center; }
+  .actions { text-align: center; }
+  .middle { flex-basis: 100%; padding: 12px 0; border-right: none; margin-top: 0.8em; margin-bottom: 0.8em; }
+  .categories { text-align: center; flex-basis: 100%; order: 3; }
+  .cat-title { display: none; }
+  .right-side { flex-basis: 100%; text-align: right; padding-left: 0;  margin-top: -48%; }
+}
 
