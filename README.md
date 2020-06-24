@@ -1,4 +1,6 @@
 <h1 align = 'center'> BookStore </h1>
+
+![The Intellectuals](https://user-images.githubusercontent.com/40712459/85550479-ea9f4c00-b618-11ea-8b89-4477f3d5c283.gif)
 This is a simple bookstore management tool with React and Redux.
 
 ## TOOLS
