@@ -1,16 +1,7 @@
 body {
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -18,12 +9,7 @@ body {
 }
 
 code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 .book-bg {
@@ -56,7 +42,7 @@ button {
   padding: 10px;
   background: rgb(101, 67, 33);
   color: white;
-  text-align-last:center;
+  text-align-last: center;
   width: 100%;
   border: 1px solid gray;
   border-radius: 0.3em;
@@ -68,7 +54,7 @@ button {
   padding: 10px;
   background: rgb(101, 67, 33);
   color: white;
-  text-align-last:center;
+  text-align-last: center;
   width: 25%;
   border: 1px solid gray;
   border-radius: 0.3em;
@@ -84,7 +70,7 @@ button {
   margin-left: -2%;
   margin-bottom: 15px;
   align-items: center;
-  border-radius:0.3em;
+  border-radius: 0.3em;
   justify-content: space-evenly;
   color: rgb(101, 67, 33);
 }
@@ -96,13 +82,13 @@ button {
 
 .books {
   align-items: center;
-  border: 1px solid #DFDFDF; 
-  background-color: cornsilk; 
+  border: 1px solid #dfdfdf;
+  background-color: cornsilk;
   border-radius: 0.3em;
   display: flex;
   height: auto;
   margin-bottom: 1em;
-  padding: 14px; 
+  padding: 14px;
 }
 
 .right-side {
@@ -114,11 +100,11 @@ button {
 
 .middle {
   align-items: center;
-  border-right: 1px solid #DDD;
+  border-right: 1px solid #ddd;
   display: inline-flex;
-  flex-basis: 20%;  
-  justify-content: center;  
-  padding-right: 20px;  
+  flex-basis: 20%;
+  justify-content: center;
+  padding-right: 20px;
 }
 
 .left-side {
@@ -143,15 +129,17 @@ button {
   padding: 10px;
   background: rgb(101, 67, 33);
   color: white;
-  text-align-last:center;
+  text-align-last: center;
   width: 50%;
   border: 1px solid gray;
   border-radius: 0.3em;
   outline: none;
 }
 
-.actions { text-align: left; }
-.actions button {  
+.actions {
+  text-align: left;
+}
+.actions button {
   background-color: transparent;
   border: none;
   font-weight: 100;
@@ -161,13 +149,15 @@ button {
   padding-left: 0;
 }
 .actions button:nth-child(2) {
-  border-left: 1px solid #DDD;
-  border-right: 1px solid #DDD;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
   margin: 0 8px;
-  padding: 0 8px
+  padding: 0 8px;
 }
 
-percent { padding-left: 12px; }
+percent {
+  padding-left: 12px;
+}
 .percentage {
   font-weight: 300;
 }
@@ -183,21 +173,50 @@ percent { padding-left: 12px; }
   margin-bottom: -2px;
 }
 
-.current { 
+.current {
   color: gray;
   font-weight: 400;
   font-size: 12px;
 }
 
 @media screen and (max-width: 720px) {
-  .actions button:nth-child(2) { padding: 6px; margin: 0; }
-  .books { flex-wrap: wrap; }
-  .book-logo { width: 100px; height: 90px;}
-  .left-side { flex-basis: 100%; text-align: center; }
-  .actions { text-align: center; }
-  .middle { flex-basis: 100%; padding: 12px 0; border-right: none; margin-top: 0.8em; margin-bottom: 0.8em; }
-  .categories { text-align: center; flex-basis: 100%; order: 3; }
-  .cat-title { display: none; }
-  .right-side { flex-basis: 100%; text-align: right; padding-left: 0;  margin-top: -48%; }
+  .actions button:nth-child(2) {
+    padding: 6px;
+    margin: 0;
+  }
+  .books {
+    flex-wrap: wrap;
+  }
+  .book-logo {
+    width: 100px;
+    height: 90px;
+  }
+  .left-side {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .actions {
+    text-align: center;
+  }
+  .middle {
+    flex-basis: 100%;
+    padding: 12px 0;
+    border-right: none;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+  }
+  .categories {
+    text-align: center;
+    flex-basis: 100%;
+    order: 3;
+  }
+  .cat-title {
+    display: none;
+  }
+  .right-side {
+    flex-basis: 100%;
+    text-align: right;
+    padding-left: 0;
+    margin-top: -48%;
+  }
 }
-
