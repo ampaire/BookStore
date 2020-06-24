@@ -26,6 +26,7 @@ code {
     "Courier New",
     monospace;
 }
+
 .book-bg {
   background-color: rgb(228, 221, 221);
   padding: 4%;
@@ -170,10 +171,6 @@ button {
   border-right: 1px solid #ddd;
   margin: 0 8px;
   padding: 0 8px;
-}
-
-percent {
-  padding-left: 12px;
 }
 
 .percentage {
