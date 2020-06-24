@@ -1,7 +1,7 @@
 import { CREATE_BOOK, REMOVE_BOOK } from '../actions/index';
 
 const initialBooks = [
-  { id: 1, title: 'A Wrinkle in Time', category: 'Fiction' },
+  { id: 1, title: 'A Wrinkle in Time', category: 'Sci-Fi' },
   { id: 2, title: 'The Hobbit', category: 'Kids' },
   { id: 3, title: 'Pride and Prejudice', category: 'History' },
 ];

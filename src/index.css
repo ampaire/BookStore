@@ -3,17 +3,18 @@ body {
   font-family:
     -apple-system,
     BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(228, 221, 221);
 }
 
 code {
@@ -22,69 +23,227 @@ code {
     Menlo,
     Monaco,
     Consolas,
-    'Courier New',
+    "Courier New",
     monospace;
 }
 
-.table-one {
-  width: 600px;
-  height: auto;
-  padding: 20px;
+.book-bg {
+  background-color: rgb(228, 221, 221);
+  padding: 4%;
+  height: 100%;
 }
 
 .input-form {
-  color: white;
-  text-align: center;
-  width: 600px;
-  padding: 10px;
+  width: 90%;
+  margin: 20px auto;
+  color: rgb(173, 171, 171);
+  display: flex;
+  justify-content: space-between;
+  height: 40%;
+}
+
+.book-input {
+  width: 50%;
+  height: 30px;
 }
 
 button {
-  background-color: brown;
+  border: none;
   color: white;
-  padding: 5px;
+  font-weight: bolder;
 }
 
-select {
+.cat-select {
   padding: 10px;
-  background: brown;
+  background: rgb(101, 67, 33);
   color: white;
+  text-align-last: center;
+  width: 100%;
   border: 1px solid gray;
-  border-radius: 12px;
+  border-radius: 0.3em;
   margin-right: 2%;
   outline: none;
 }
 
 .btn2 {
-  border: 1px solid gray;
-  border-radius: 12px;
   padding: 10px;
-  width: 100px;
-  outline: none;
-  cursor: pointer;
-}
-
-.btn3 {
-  border: 1px solid gray;
-  border-radius: 12px;
-  padding: 10px;
-  width: 120px;
-  outline: none;
-  cursor: pointer;
-}
-
-input {
-  padding: 7px;
-  margin-right: 3%;
-}
-
-.trow {
-  padding: 5px;
-}
-
-.erow {
-  background: brown;
+  background: rgb(101, 67, 33);
   color: white;
+  text-align-last: center;
+  width: 25%;
+  border: 1px solid gray;
+  border-radius: 0.3em;
+  margin-left: 2%;
+  outline: none;
+}
+
+.header {
+  display: flex;
+  background-color: cornsilk;
+  width: 104%;
+  margin-top: -1.2em;
+  margin-left: -2%;
+  margin-bottom: 15px;
+  align-items: center;
+  border-radius: 0.3em;
+  justify-content: space-evenly;
+  color: rgb(101, 67, 33);
+}
+
+.book-logo {
+  width: 200px;
+  height: 100px;
+}
+
+.books {
+  align-items: center;
+  border: 1px solid #dfdfdf;
+  background-color: cornsilk;
+  border-radius: 0.3em;
+  display: flex;
+  height: auto;
+  margin-bottom: 1em;
+  padding: 14px;
+}
+
+.right-side {
+  flex-basis: 30%;
+  justify-self: center;
+  padding-left: 2.5%;
   text-align: center;
-  width: 100%;
+}
+
+.middle {
+  align-items: center;
+  border-right: 1px solid #ddd;
+  display: inline-flex;
+  flex-basis: 20%;
+  justify-content: center;
+  padding-right: 20px;
+}
+
+.left-side {
+  flex-basis: 50%;
+}
+
+.progress {
+  width: 40px;
+  height: 40px;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-right: 10px solid rgb(101, 67, 33);
+  border-bottom: 10px solid rgb(101, 67, 33);
+}
+
+.container {
+  background-color: rgb(228, 221, 221);
+  padding: 1.2em;
+}
+
+.btn {
+  padding: 10px;
+  background: rgb(101, 67, 33);
+  color: white;
+  text-align-last: center;
+  width: 50%;
+  border: 1px solid gray;
+  border-radius: 0.3em;
+  outline: none;
+}
+
+.actions {
+  text-align: left;
+}
+
+.actions button {
+  background-color: transparent;
+  border: none;
+  font-weight: 100;
+  color: rgb(128, 126, 126);
+}
+
+.actions button:nth-child(1) {
+  padding-left: 0;
+}
+
+.actions button:nth-child(2) {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  margin: 0 8px;
+  padding: 0 8px;
+}
+
+.percentage {
+  font-weight: 300;
+}
+
+.completed {
+  color: gray;
+  font-weight: 300;
+}
+
+.category {
+  color: grey;
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+  font-weight: 800;
+  margin-bottom: -2px;
+}
+
+.current {
+  color: gray;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 720px) {
+  .actions button:nth-child(2) {
+    padding: 6px;
+    margin: 0;
+  }
+
+  .books {
+    flex-wrap: wrap;
+  }
+
+  .book-logo {
+    width: 100px;
+    height: 90px;
+  }
+
+  .left-side {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .actions {
+    text-align: center;
+  }
+
+  .middle {
+    flex-basis: 100%;
+    padding: 12px 0;
+    border-right: none;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+  }
+
+  .categories {
+    text-align: center;
+    flex-basis: 100%;
+    order: 3;
+  }
+
+  .cat-title {
+    display: none;
+  }
+
+  .right-side {
+    flex-basis: 100%;
+    text-align: right;
+    padding-left: 0;
+    margin-top: -48%;
+  }
 }
