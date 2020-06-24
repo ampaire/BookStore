@@ -1,7 +1,15 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -9,7 +17,11 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    "Courier New",
     monospace;
 }
 .book-bg {
@@ -139,15 +151,18 @@ button {
 .actions {
   text-align: left;
 }
+
 .actions button {
   background-color: transparent;
   border: none;
   font-weight: 100;
   color: rgb(128, 126, 126);
 }
+
 .actions button:nth-child(1) {
   padding-left: 0;
 }
+
 .actions button:nth-child(2) {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
@@ -168,7 +183,9 @@ percent {
 
 .category {
   color: grey;
-  font-family: Arial;
+  font-family: Arial,
+  Helvetica,
+  sans-serif;
   font-weight: 800;
   margin-bottom: -2px;
 }
@@ -184,20 +201,25 @@ percent {
     padding: 6px;
     margin: 0;
   }
+
   .books {
     flex-wrap: wrap;
   }
+
   .book-logo {
     width: 100px;
     height: 90px;
   }
+
   .left-side {
     flex-basis: 100%;
     text-align: center;
   }
+
   .actions {
     text-align: center;
   }
+
   .middle {
     flex-basis: 100%;
     padding: 12px 0;
@@ -205,14 +227,17 @@ percent {
     margin-top: 0.8em;
     margin-bottom: 0.8em;
   }
+
   .categories {
     text-align: center;
     flex-basis: 100%;
     order: 3;
   }
+
   .cat-title {
     display: none;
   }
+
   .right-side {
     flex-basis: 100%;
     text-align: right;
