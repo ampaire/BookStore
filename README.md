@@ -14,7 +14,7 @@ This is a simple bookstore management tool with React and Redux.
 - ES6
 
 ## THE PROJECT
-Magic-books Inc. is a fictional company based in Germany. They have requested your help to build the front-end of an application that will help them organize and manage their bookstore. They want it to be fast, dynamic and responsive to their actions and therefore you decided to build it with React & Redux.
+Magic-books Inc. is a fictional company based in Germany. They have requested your help to build the front-end of an application that will help them organize and manage their bookstore. It is fast, dynamic and responsive to their actions and therefore I decided to build it with React & Redux.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
